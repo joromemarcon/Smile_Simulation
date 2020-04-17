@@ -1,6 +1,6 @@
 # Smile_Simulation
 
-# FIRST THING TO BE DONE
+# First thing to do
         ** Must have gazebo desktop installed!
         If you do not have huskey_gazebo please install with the following
         command:
