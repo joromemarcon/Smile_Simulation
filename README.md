@@ -1,9 +1,10 @@
 # Smile_Simulation
 
-FIRST THING TO BE DONE:
+FIRST THING TO BE DONE
         ** Must have gazebo desktop installed!
         If you do not have huskey_gazebo please install with the following
         command:
+        
                 sudo apt-get install ros-<distro>-husky-simulator
 
         Initialize your environment:
