@@ -1,7 +1,7 @@
 <sdf version='1.6'>
   <world name='default'>
     <scene>
-      <grid>0</grid>
+      <grid>1</grid>
       <ambient>0.4 0.4 0.4 1</ambient>
       <background>0.7 0.7 0.7 1</background>
       <shadows>1</shadows>
