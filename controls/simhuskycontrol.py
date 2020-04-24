@@ -20,7 +20,7 @@ class Simulator:
         rospy.spin()
 
     def goal_switch(self, select):
-        switch={0: [10,-2], 
+        switch={0: [12,14], 
                 1: [10,-2],
                 2: [10,-5],
                 3: [10, -6],
@@ -68,15 +68,24 @@ class Simulator:
         # Proportional Controller
         v = 0 # default linear velocity
         w = 0 # default angluar velocity
-        inlane = False
-        if(pose[0] <= 8):
-            inlane = True
-            
-        print(pose[0] , pose[1] , self.lanelength) 
-        if(inlane == True):
+	
+	destination = True
+	distance = sqrt((pose[0]-self.goal[0])**2+(pose[1]-self.goal[1])**2)
+        print(distance)
+        if (distance > distThresh):
+		destination = False
+
+        if(pose[0] <= 8.5 and destination == False):
+	    middle = 0
             self.goal[1] = middle
             self.goal[0] = pose[0] + 0.5
+
+	if(pose[0] > 8.5 and destination == False):
+       	    middle = 12
+	    self.goal[0] = middle
+            self.goal[1] = pose[1] + 0.5
             print("In lane")
+           
         
         distance = sqrt((pose[0]-self.goal[0])**2+(pose[1]-self.goal[1])**2)
         print(distance)
@@ -87,9 +96,9 @@ class Simulator:
             bound = atan2(sin(u),cos(u))
             w = min(0.5 , max(-0.5, wgain*bound))
 
-        if (distance < distThresh):
-            self.next_goal = self.next_goal + 1
-            print ("NEXT, {}", self.next_goal)
+        #if (distance < distThresh):
+        #    self.next_goal = self.next_goal + 1
+        #    print ("NEXT, {}", self.next_goal)
         # Publish
         msg.linear.x = v
         msg.angular.z = w
