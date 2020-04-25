@@ -1,23 +1,45 @@
 #!/usr/bin/env python
 
+from PID import PID
 import rospy, tf
 import geometry_msgs.msg, nav_msgs.msg
 from math import *
-from time import sleep
+import time
 
+myAccelerate = PID(0.000005,0,0.0000025)
+myDecelerate = PID(0.00002,0,0.00003)
 class Simulator:
     def __init__(self):
         self.next_goal=0
         self.goal=[0,0]
         self.lane0, self.lane1 = self.lanes(0.5, 2, 0, 10)
         self.lanelength = len(self.lane0)
+	self.error = 0
+	self.topspeed = 5
+	self.vconst = 0
 
 
     def listen(self, cmdmsg, cmdpub):
+	
         rospy.Subscriber('odometry/filtered',nav_msgs.msg.Odometry,self.huskyOdomCallback, 
                  (cmdpub,cmdmsg))
-
         rospy.spin()
+
+    def pid(self):
+	prv_error = self.error
+	current_time = time.time()
+	time.sleep(0.001)
+	error = self.topspeed - self.vconst
+	etime = time.time() - current_time
+	self.vconst = self.vconst + myAccelerate.pid_controller(error,prv_error,etime)
+
+    def pid_decelerate(self):
+	prv_error = self.error
+	current_time = time.time()
+	time.sleep(0.001)
+	error = self.topspeed - self.vconst
+	etime = time.time() - current_time
+	self.vconst = self.vconst + myDecelerate.pid_controller(error,prv_error,etime)
 
     def goal_switch(self, select):
         switch={0: [12,14], 
@@ -46,12 +68,13 @@ class Simulator:
 
         # Callback arguments 
         pub,msg = cargs
-
-
+	
+	self.pid()
         # Tunable parameters
         wgain = 15.0 # Gain for the angular velocity [rad/s / rad]
-        vconst = 5.0 # Linear velocity when far away [m/s]
+        vconst = self.vconst # Linear velocity when far away [m/s]
         distThresh = 0.25 # Distance treshold [m]
+	print("vconst: {0}".format(vconst))
 
         # Generate a simplified pose
         pos = message.pose.pose
@@ -64,16 +87,18 @@ class Simulator:
         middle = 0
         
         self.goal_switch(self.next_goal)
-        print(self.goal, pose[1], middle, pose[0], self.lanelength)
+        #print(self.goal, pose[1], middle, pose[0], self.lanelength)
         # Proportional Controller
         v = 0 # default linear velocity
         w = 0 # default angluar velocity
 	
 	destination = True
 	distance = sqrt((pose[0]-self.goal[0])**2+(pose[1]-self.goal[1])**2)
-        print(distance)
+	if(distance < 1.8):
+	    self.topspeed = 0
+	    self.pid_decelerate()
         if (distance > distThresh):
-		destination = False
+	    destination = False
 
         if(pose[0] <= 8.5 and destination == False):
 	    middle = 0
@@ -84,11 +109,10 @@ class Simulator:
        	    middle = 12
 	    self.goal[0] = middle
             self.goal[1] = pose[1] + 0.5
-            print("In lane")
            
         
         distance = sqrt((pose[0]-self.goal[0])**2+(pose[1]-self.goal[1])**2)
-        print(distance)
+        #print(distance)
         if (distance > distThresh):
             v = vconst
             desireYaw = atan2(self.goal[1]-pose[1],self.goal[0]-pose[0])
