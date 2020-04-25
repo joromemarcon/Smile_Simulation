@@ -51,56 +51,6 @@
       </link>
       <static>1</static>
     </model>
-    <road name='Solid_Lane'>
-      <width>4</width>
-      <point>0 2 0</point>
-      <point>10 2 0</point>
-      <material>
-        <script>
-          <uri>file://media/materials/scripts/smile.material</uri>
-          <name>Smile/Solid_Lane</name>
-        </script>
-      </material>
-    </road>
-    <road name='Intersection'>
-      <width>4</width>
-      <point>10 2 0</point>
-      <point>14 2 0</point>
-      <material>
-        <script>
-          <uri>file://media/materials/scripts/smile.material</uri>
-          <name>Smile/Intersection</name>
-        </script>
-      </material>
-    </road>
-    <road name='Two_Lane'>
-      <width>4</width>
-      <point>12 4 0</point>
-      <point>12 18 0</point>
-      <material>
-        <script>
-          <uri>file://media/materials/scripts/smile.material</uri>
-          <name>Smile/Two_Lane</name>
-        </script>
-      </material>
-    </road>
-    <road name='Two_way'>
-      <width>4</width>
-      <point>12 0 0</point>
-      <point>12 -5 0</point>
-      <point>11.5 -6 0</point>
-      <point>10.5 -7 0</point>
-      <point>9.5 -7.5 0</point>
-      <point>0 -7.5 0</point>
-      <material>
-        <script>
-          <uri>file://media/materials/scripts/smile.material</uri>
-          <name>Smile/Two_Way</name>
-        </script>
-      </material>
-    </road>
-
-
     <gravity>0 0 -9.8</gravity>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
     <atmosphere type='adiabatic'/>
@@ -713,42 +663,42 @@
       <pose frame=''>0 0 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>107 181000000</sim_time>
-      <real_time>128 317882732</real_time>
-      <wall_time>1587137552 525703202</wall_time>
-      <iterations>107181</iterations>
+      <sim_time>1527 256000000</sim_time>
+      <real_time>2606 77139636</real_time>
+      <wall_time>1587775575 417944280</wall_time>
+      <iterations>1343777</iterations>
       <model name='/'>
-        <pose frame=''>0.648701 1.22775 0.132279 0 -0 0.000253</pose>
+        <pose frame=''>0.645263 1.22775 0.13228 0 -0 0.000254</pose>
         <scale>1 1 1</scale>
         <link name='base_link'>
-          <pose frame=''>0.648701 1.22775 0.132279 0 -0 0.000253</pose>
-          <velocity>1e-06 -0 8e-06 3e-06 -0 0</velocity>
-          <acceleration>-0 0 0 0 -0 0</acceleration>
-          <wrench>-0 0 0 0 -0 0</wrench>
+          <pose frame=''>0.645263 1.22775 0.13228 0 -0 0.000254</pose>
+          <velocity>-3e-06 1e-06 4e-06 -1.1e-05 0 0</velocity>
+          <acceleration>-0 -0 -0 0 -0 0</acceleration>
+          <wrench>-0 -0 -0 0 -0 0</wrench>
         </link>
         <link name='front_left_wheel_link'>
-          <pose frame=''>0.904629 1.51321 0.165099 0 0.00048 0.000253</pose>
-          <velocity>1e-06 -0 8e-06 3e-06 4e-06 -0</velocity>
-          <acceleration>-0 -0 -0 -0 -0 -0</acceleration>
-          <wrench>-0 -0 -0 0 -0 0</wrench>
+          <pose frame=''>0.90119 1.51321 0.1651 -1e-06 -0.020353 0.000254</pose>
+          <velocity>-3e-06 2e-06 -2e-06 -1.3e-05 -2e-05 -1e-06</velocity>
+          <acceleration>-0 -0 0 0 -0 0</acceleration>
+          <wrench>-0 -0 0 0 -0 0</wrench>
         </link>
         <link name='front_right_wheel_link'>
-          <pose frame=''>0.904773 0.942412 0.165099 1e-06 0.000573 0.000253</pose>
-          <velocity>1e-06 -0 7e-06 3e-06 4e-06 -0</velocity>
-          <acceleration>-0 0 0 0 -0 0</acceleration>
-          <wrench>-0 0 0 0 -0 0</wrench>
+          <pose frame=''>0.901335 0.94241 0.1651 -1e-06 -0.020254 0.000254</pose>
+          <velocity>-3e-06 2e-06 1e-06 -1.5e-05 -2e-05 0</velocity>
+          <acceleration>-0 -0 0 0 -0 0</acceleration>
+          <wrench>-0 -0 0 0 -0 0</wrench>
         </link>
         <link name='rear_left_wheel_link'>
-          <pose frame=''>0.392629 1.51308 0.165099 0 0.0005 0.000253</pose>
-          <velocity>1e-06 -0 8e-06 3e-06 4e-06 -0</velocity>
-          <acceleration>-0 -0 -0 -0 -0 -0</acceleration>
-          <wrench>-0 -0 -0 0 -0 0</wrench>
+          <pose frame=''>0.38919 1.51308 0.1651 -1e-06 -0.020333 0.000254</pose>
+          <velocity>-3e-06 2e-06 -2e-06 -1.3e-05 -2e-05 0</velocity>
+          <acceleration>-0 0 -0 -0 -0 -0</acceleration>
+          <wrench>-0 0 -0 0 -0 0</wrench>
         </link>
         <link name='rear_right_wheel_link'>
-          <pose frame=''>0.392773 0.942282 0.165099 1e-06 0.000608 0.000253</pose>
-          <velocity>1e-06 -0 7e-06 3e-06 4e-06 -0</velocity>
-          <acceleration>-0 0 0 0 -0 0</acceleration>
-          <wrench>-0 0 0 0 -0 0</wrench>
+          <pose frame=''>0.389335 0.94228 0.1651 -1e-06 -0.020219 0.000254</pose>
+          <velocity>-3e-06 2e-06 1e-06 -1.5e-05 -2e-05 0</velocity>
+          <acceleration>-0 0 -0 -0 -0 -0</acceleration>
+          <wrench>-0 0 -0 0 -0 0</wrench>
         </link>
       </model>
       <model name='ground'>
@@ -761,16 +711,871 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
+      <model name='road_curve'>
+        <pose frame=''>7.75064 17.0186 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>7.75064 17.0186 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='road_curve_0'>
+        <pose frame=''>16.091 -0.883517 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>16.091 -0.883517 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='road_curve_1'>
+        <pose frame=''>15.25 -18 0 0 0 -1.57</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>15.25 -18 0 0 0 -1.57</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='road_curve_2'>
+        <pose frame=''>1 17.7 0 0 -0 1.57</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>1 17.7 0 0 -0 1.57</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='road_curve_3'>
+        <pose frame=''>0.25 -17.3049 0 0 -0 3.14</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>0.25 -17.3049 0 0 -0 3.14</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='road_double_yellow_horizontal'>
+        <pose frame=''>-2.02546 9.55398 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-2.02546 9.55398 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='road_double_yellow_horizontal_0'>
+        <pose frame=''>-2.04223 8.01032 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-2.04223 8.01032 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='road_double_yellow_horizontal_1'>
+        <pose frame=''>-1.9697 -3.93735 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-1.9697 -3.93735 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='road_double_yellow_horizontal_2'>
+        <pose frame=''>-1.96572 -8.41951 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-1.96572 -8.41951 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='road_intersection'>
+        <pose frame=''>9.94628 2.05295 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>9.94628 2.05295 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='road_intersection_0'>
+        <pose frame=''>-2.0121 2.02407 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-2.0121 2.02407 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='road_solid_white_horizontal'>
+        <pose frame=''>9.95001 8.0523 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>9.95001 8.0523 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='road_solid_white_horizontal_0'>
+        <pose frame=''>18.2965 -9.84484 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>18.2965 -9.84484 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='road_solid_white_vertical'>
+        <pose frame=''>4.01295 2.06528 0 0 -0 1.57</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>4.01295 2.06528 0 0 -0 1.57</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='road_solid_white_vertical_0'>
+        <pose frame=''>6.36257 -20.2172 0 0 -0 1.57</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>6.36257 -20.2172 0 0 -0 1.57</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
       <light name='sun'>
         <pose frame=''>0 0 10 0 -0 0</pose>
       </light>
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>-0.904025 1.23156 1.06817 0 0.319643 0.080198</pose>
+        <pose frame=''>5.51394 -1.72937 48.082 3.14159 1.57079 3.14159</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
+    <model name='road_solid_white_vertical'>
+      <pose frame=''>4.01295 2.06528 0 0 -0 1.57</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <size>4 8</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <size>4 8</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/smile.material</uri>
+              <name>Smile/Solid_Lane</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='road_intersection'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <size>4 4</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <size>4 4</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/smile.material</uri>
+              <name>Smile/Intersection</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>9.94628 2.05295 0 0 -0 0</pose>
+    </model>
+    <model name='road_solid_white_horizontal'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <size>4 8</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <size>4 8</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/smile.material</uri>
+              <name>Smile/Solid_Lane</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>9.95001 8.0523 0 0 -0 0</pose>
+    </model>
+    <model name='road_curve'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <size>8 8</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <size>8.45 10</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/smile.material</uri>
+              <name>Smile/Curve_Lane</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>7.75064 17.0186 0 0 -0 0</pose>
+    </model>
+    <model name='road_curve_0'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <size>8 8</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <size>8.45 10</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/smile.material</uri>
+              <name>Smile/Curve_Lane</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>16.091 -0.883517 0 0 -0 0</pose>
+    </model>
+    <model name='road_solid_white_horizontal_0'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <size>4 8</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <size>4 8</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/smile.material</uri>
+              <name>Smile/Solid_Lane</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>18.2965 -9.84484 0 0 -0 0</pose>
+    </model>
+    <model name='road_curve_1'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <size>8 8</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <size>8.45 10</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/smile.material</uri>
+              <name>Smile/Curve_Lane</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>16.0639 -18.833 0 0 -0 0</pose>
+    </model>
+    <model name='road_curve_2'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <size>8 8</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <size>8.45 10</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/smile.material</uri>
+              <name>Smile/Curve_Lane</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>-0.615469 17.0102 0 0 -0 0</pose>
+    </model>
+    <model name='road_double_yellow_horizontal'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <size>4 8</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <size>4 8</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/smile.material</uri>
+              <name>Smile/Two_Way</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>-2.02546 9.55398 0 0 -0 0</pose>
+    </model>
+    <model name='road_double_yellow_horizontal_0'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <size>4 8</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <size>4 8</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/smile.material</uri>
+              <name>Smile/Two_Way</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>-2.04223 8.01032 0 0 -0 0</pose>
+    </model>
+    <model name='road_intersection_0'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <size>4 4</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <size>4 4</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/smile.material</uri>
+              <name>Smile/Intersection</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>-2.0121 2.02407 0 0 -0 0</pose>
+    </model>
+    <model name='road_double_yellow_horizontal_1'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <size>4 8</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <size>4 8</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/smile.material</uri>
+              <name>Smile/Two_Way</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>-1.9697 -3.93735 0 0 -0 0</pose>
+    </model>
+    <model name='road_curve_3'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <size>8 8</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <size>8.45 10</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/smile.material</uri>
+              <name>Smile/Curve_Lane</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>-0.068516 -17.3049 0 0 -0 0</pose>
+    </model>
+    <model name='road_solid_white_vertical_0'>
+      <pose frame=''>6.36257 -20.2172 0 0 -0 1.57</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <size>4 8</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <size>4 8</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/smile.material</uri>
+              <name>Smile/Solid_Lane</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='road_double_yellow_horizontal_2'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <size>4 8</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <size>4 8</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/smile.material</uri>
+              <name>Smile/Two_Way</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>-1.96572 -8.41951 0 0 -0 0</pose>
+    </model>
   </world>
 </sdf>
