@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">	
+  <model name='road_curve_270'>
+    <static>true</static>
+    <pose>0 0 0 0 0 -1.57</pose>
+    <link name='link'>
+      <collision name='collision'>
+        <geometry>
+          <plane>
+            <size>8 8</size>
+          </plane>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='visual'>
+        <geometry>
+          <plane>
+            <size>8.45 10</size>
+          </plane>
+        </geometry>
+	<material>
+	  <script>
+	    <uri>file://media/materials/scripts/smile.material</uri>
+            <name>Smile/Curve_Lane</name>
+	  </script>
+	</material>
+      </visual>
+    </link>
+  </model>
+</sdf>
