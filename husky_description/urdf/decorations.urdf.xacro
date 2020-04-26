@@ -35,7 +35,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://husky_description/meshes/top_chassis.dae" />
+          <mesh><uri>file:///home/rigom/Desktop/Smile_Simulation/husky_description/meshes/top_chassis.dae</uri></mesh>
         </geometry>
       </visual>
     </link>
@@ -51,7 +51,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
       <link name="user_rail_link">
         <visual>
           <geometry>
-            <mesh filename="package://husky_description/meshes/user_rail.dae" />
+            <mesh><uri>file:///home/rigom/Desktop/Smile_Simulation/husky_description/meshes/user_rail.dae</uri></mesh>
           </geometry>
         </visual>
       </link>
@@ -68,7 +68,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <link name="front_bumper_link">
       <visual>
         <geometry>
-          <mesh filename="package://husky_description/meshes/bumper.dae" />
+          <mesh><uri>file:///home/rigom/Desktop/Smile_Simulation/husky_description/meshes/bumper.dae</uri></mesh>
         </geometry>
       </visual>
     </link>
@@ -84,7 +84,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
       <link name="front_bumper_extension_link">
           <visual>
               <geometry>
-                  <mesh filename="package://husky_description/meshes/bumper_extension.dae" />
+                  <mesh><uri>file:///home/rigom/Desktop/Smile_Simulation/husky_description/meshes/bumper_extension.dae</uri></mesh>
               </geometry>
           </visual>
       </link>
@@ -100,7 +100,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <link name="rear_bumper_link">
       <visual>
         <geometry>
-          <mesh filename="package://husky_description/meshes/bumper.dae" />
+          <mesh><uri>file:///home/rigom/Desktop/Smile_Simulation/husky_description/meshes/bumper.dae</uri></mesh>
         </geometry>
       </visual>
     </link>
@@ -116,7 +116,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
       <link name="rear_bumper_extension_link">
           <visual>
               <geometry>
-                  <mesh filename="package://husky_description/meshes/bumper_extension.dae" />
+                  <mesh><uri>file:///home/rigom/Desktop/Smile_Simulation/husky_description/meshes/bumper_extension.dae</uri></mesh>
               </geometry>
           </visual>
       </link>
@@ -135,13 +135,13 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
           <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-              <mesh filename="package://husky_description/meshes/large_top_plate.dae" />
+              <mesh><uri>file:///home/rigom/Desktop/Smile_Simulation/husky_description/meshes/large_top_plate.dae</uri></mesh>
             </geometry>
           </visual>
           <collision>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-              <mesh filename="package://husky_description/meshes/large_top_plate_collision.stl" />
+              <mesh><uri>file:///home/rigom/Desktop/Smile_Simulation/husky_description/meshes/large_top_plate_collision.stl</uri></mesh>
             </geometry>
           </collision>
         </link>
@@ -170,13 +170,13 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
           <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-              <mesh filename="package://husky_description/meshes/top_plate.dae" />
+              <mesh><uri>file:///home/rigom/Desktop/Smile_Simulation/husky_description/meshes/top_plate.dae</uri></mesh>
             </geometry>
           </visual>
           <collision>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-              <mesh filename="package://husky_description/meshes/top_plate.stl" />
+              <mesh><uri>file:///home/rigom/Desktop/Smile_Simulation/husky_description/meshes/top_plate.stl</uri></mesh>
             </geometry>
           </collision>
         </link>

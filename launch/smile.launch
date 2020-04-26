@@ -1,7 +1,7 @@
 <launch>
 
-  <arg name="laser_enabled" default="false"/>
-  <arg name="kinect_enabled" default="false"/>
+  <arg name="laser_enabled" default="true"/>
+  <arg name="kinect_enabled" default="true"/>
 
   <include file="city.launch" />
 

@@ -6,7 +6,7 @@
   <arg name="robot_namespace" default="$(optenv ROBOT_NAMESPACE robot)"/>
 
   <arg name="config_extras"
-       default="$(eval optenv('HUSKY_CONFIG_EXTRAS', find('husky_control') + '/config/empty.yaml'))"/>
+       default="$(eval optenv('HUSKY_CONFIG_EXTRAS', '/home/rigom/Desktop/Smile_Simulation/husky_control/config/empty.yaml'))"/>
 
   <arg name="laser_enabled" default="$(optenv HUSKY_LMS1XX_ENABLED false)"/>
   <arg name="kinect_enabled" default="$(optenv HUSKY_KINECT_ENABLED false)"/>
@@ -43,7 +43,7 @@
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
 
   <node pkg="twist_mux" type="twist_mux" name="twist_mux">
-    <rosparam command="load" file="$(find husky_control)/config/twist_mux.yaml" />
+    <rosparam command="load" file="../husky_control/config/twist_mux.yaml" />
     <remap from="cmd_vel_out" to="husky_velocity_controller/cmd_vel"/>
   </node>
 
