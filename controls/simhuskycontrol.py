@@ -9,20 +9,36 @@ class Simulator:
     def __init__(self):
         self.next_goal=0
         self.goal=[0,0]
+        self.lane0, self.lane1 = self.lanes(0.5, 2, 0, 10)
+        self.lanelength = len(self.lane0)
+
 
     def listen(self, cmdmsg, cmdpub):
         rospy.Subscriber('odometry/filtered',nav_msgs.msg.Odometry,self.huskyOdomCallback, 
                  (cmdpub,cmdmsg))
+
         rospy.spin()
 
     def goal_switch(self, select):
-        switch={0: [9,0], 
+        switch={0: [12,14], 
                 1: [10,-2],
                 2: [10,-5],
                 3: [10, -6],
                 4: [9, -7],
                 5: [0, -8]}
         self.goal = switch.get(select)
+    
+    def lanes(self,width1, width2, len1, len2):
+        x1 = []
+        x2 = []
+        for i in range(len1,len2):
+            x1.append([i,width1])
+            x2.append([i,width2])
+        
+        middle = (x1[0][1]+ x2[0][1])/2
+
+        return x1, x2
+
 
     def huskyOdomCallback(self, message,cargs):
         # Implementation of proportional position control 
@@ -35,7 +51,7 @@ class Simulator:
         # Tunable parameters
         wgain = 15.0 # Gain for the angular velocity [rad/s / rad]
         vconst = 5.0 # Linear velocity when far away [m/s]
-        distThresh = 0.5 # Distance treshold [m]
+        distThresh = 0.25 # Distance treshold [m]
 
         # Generate a simplified pose
         pos = message.pose.pose
@@ -44,28 +60,52 @@ class Simulator:
         angles = tf.transformations.euler_from_quaternion((quat.x,quat.y,
                                                            quat.z,quat.w))
         theta = angles[2]
-        pose = [pos.position.x, pos.position.y, theta]  # X, Y, Theta 
+        pose = [pos.position.x, pos.position.y, theta]  # X, Y, Theta
+        middle = 0
+        
         self.goal_switch(self.next_goal)
+        print(self.goal, pose[1], middle, pose[0], self.lanelength)
         # Proportional Controller
         v = 0 # default linear velocity
         w = 0 # default angluar velocity
+	
+	destination = True
+	distance = sqrt((pose[0]-self.goal[0])**2+(pose[1]-self.goal[1])**2)
+        print(distance)
+        if (distance > distThresh):
+		destination = False
+
+        if(pose[0] <= 8.5 and destination == False):
+	    middle = 0
+            self.goal[1] = middle
+            self.goal[0] = pose[0] + 0.5
+
+	if(pose[0] > 8.5 and destination == False):
+       	    middle = 12
+	    self.goal[0] = middle
+            self.goal[1] = pose[1] + 0.5
+            print("In lane")
+           
+        
         distance = sqrt((pose[0]-self.goal[0])**2+(pose[1]-self.goal[1])**2)
+        print(distance)
         if (distance > distThresh):
             v = vconst
             desireYaw = atan2(self.goal[1]-pose[1],self.goal[0]-pose[0])
             u = desireYaw-theta
             bound = atan2(sin(u),cos(u))
             w = min(0.5 , max(-0.5, wgain*bound))
-        if (distance < distThresh):
-            self.next_goal = self.next_goal + 1
-            print ("NEXT, {}", self.next_goal);
+
+        #if (distance < distThresh):
+        #    self.next_goal = self.next_goal + 1
+        #    print ("NEXT, {}", self.next_goal)
         # Publish
         msg.linear.x = v
         msg.angular.z = w
         pub.publish(msg)
         
         # Reporting
-        print('huskyOdomCallback: x=%4.1f,y=%4.1f dist=%4.2f, cmd.v=%4.2f, cmd.w=%4.2f'%(pose[0],pose[1],distance,v,w))
+        print('huskyOdomCallback: x=%4.1f,y=%4.1f dist=%4.2f, cmd.v=%4.2f, cmd.w=%4.2f, goal[0]=%4.2f, goal[1]=%4.2f'%(pose[0],pose[1],distance,v,w,self.goal[0], self.goal[1]))
 
 ########################################
 # Main Script
