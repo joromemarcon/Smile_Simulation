@@ -67,7 +67,7 @@ class LaneDetector():
         return res[:, :, 0]
 
     def perspective_warp(self, img, dst_size=(640, 480),
-                        src=np.float32([(0.285, 0.45), (0.6, 0.45), (0.05, 0.66), (.80, 0.66)]),
+                        src=np.float32([(0.285, 0.44), (0.6, 0.44), (0.015, 0.833), (.828, 0.833)]),
                         dst=np.float32([(0, 0), (1, 0), (0, 1), (1, 1)])):
 
         # src: (x,y) -> TopLeft, TopRight, BottomLeft, BottomRight
@@ -83,7 +83,7 @@ class LaneDetector():
     def inv_perspective_warp(self, img,
                             dst_size=(640, 480),
                             src=np.float32([(0, 0), (1, 0), (0, 1), (1, 1)]),
-                            dst=np.float32([(0.285, 0.45), (0.6, 0.44), (0.05, 0.66), (.80, 0.66)])):
+                            dst=np.float32([(0.285, 0.44), (0.6, 0.44), (0.015, 0.833), (.828, 0.833)])):
         img_size = np.float32([(img.shape[1], img.shape[0])])
         src = src * img_size
         dst = dst * np.float32(dst_size)
@@ -265,6 +265,7 @@ class LaneDetector():
         # Gazebo image already in RGB
         # img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         img_ = self.filter(img)
+        # return img_
         # Gazebo return 640 x 640 image size
         img_ = self.perspective_warp(img_)
         # return img_
