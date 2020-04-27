@@ -66,8 +66,8 @@ class LaneDetector():
         _, res = cv2.threshold(res, 0, 255, cv2.THRESH_BINARY)
         return res[:, :, 0]
 
-    def perspective_warp(self, img, dst_size=(720, 480),
-                        src=np.float32([(0, 0.4), (1, 0.4), (0.1, 1), (.9, 1)]),
+    def perspective_warp(self, img, dst_size=(640, 480),
+                        src=np.float32([(0.285, 0.45), (0.6, 0.45), (0.05, 0.66), (.80, 0.66)]),
                         dst=np.float32([(0, 0), (1, 0), (0, 1), (1, 1)])):
 
         # src: (x,y) -> TopLeft, TopRight, BottomLeft, BottomRight
@@ -81,9 +81,9 @@ class LaneDetector():
         return warped
 
     def inv_perspective_warp(self, img,
-                            dst_size=(720, 480),
+                            dst_size=(640, 480),
                             src=np.float32([(0, 0), (1, 0), (0, 1), (1, 1)]),
-                            dst=np.float32([(0, 0.4), (1, 0.4), (0.1, 1), (.9, 1)])):
+                            dst=np.float32([(0.285, 0.45), (0.6, 0.44), (0.05, 0.66), (.80, 0.66)])):
         img_size = np.float32([(img.shape[1], img.shape[0])])
         src = src * img_size
         dst = dst * np.float32(dst_size)
@@ -213,22 +213,19 @@ class LaneDetector():
         y_eval = np.max(ploty)
         # ym_per_pix = 30.5/720  # meters per pixel in y dimension
         # xm_per_pix = 3.7/720  # meters per pixel in x dimension
-        ym_per_pix = 19/250  # meters per pixel in y dimension
-        xm_per_pix = 28.7/720  # meters per pixel in x dimension
+        ym_per_pix = 100/480  # meters per pixel in y dimension
+        xm_per_pix = 100/640  # meters per pixel in x dimension
 
         # Fit new polynomials to x,y in world space
-        left_fit_cr = np.polyfit(ploty*ym_per_pix, leftx*xm_per_pix, 2)
-        right_fit_cr = np.polyfit(ploty*ym_per_pix, rightx*xm_per_pix, 2)
+        print(ploty)
+        print(leftx)
+
+        left_fit_cr = np.polyfit(ploty, leftx, 2)
+        right_fit_cr = np.polyfit(ploty, rightx, 2)
         # print(left_fit_cr)
 
         left_fitx = left_fit_cr[0]*ploty**2 + left_fit_cr[1]*ploty + left_fit_cr[2]
 
-        # f = plt.figure()
-        # ax1 = f.subplots()
-        # ax1.plot(left_fitx, ploty)
-        # plt.show()
-
-        # print(leftx[0])
         x1, y1 = 0, 0
         x2, y2 = 480, leftx[0] - leftx[-1]
 
@@ -236,45 +233,7 @@ class LaneDetector():
         alen = y2 - y1
         hlen = math.sqrt((olen**2)+(alen**2))
         theta = math.asin(olen/hlen)
-        # print(olen, alen, hlen)
-        # print("THETA: " + str(math.degrees(theta)))
-
-        # f = plt.figure()
-        # ax1 = f.subplots()
-        # ax1.plot(ploty, left_fitx)
-        # # ax2.imshow(out_img)
-        # plt.show()
-
-        # # Testing f(0)
-        # A = left_fit_cr[0]
-        # B = left_fit_cr[1]
-        # C = left_fit_cr[2]
-
-        # x1 = 192
-        # x2 = 480
-        # y1 = (A*(479**2) + B*479 + C)
-        # y2 = A*(x2**2) + B*x2 + C
-
-        # deg90points = (x1, y2)
-
-        # alen = x1
-        # blen = x1-x2
-        # hlen = math.sqrt(alen**2+blen**2)
-
-        # theta = math.asin(blen/hlen)
-
-        # # print("plotY: " + str(ploty))
-        # # print("leftX: " + str(leftx[0]))
-        # print("y1: " + str(y1))
-        # # print("Y1: " + str(y1))
-        # # print("Y2: " + str(y2))
-        # # print("Alen:" + str(alen))
-        # # print("Blen:" + str(blen))
-        # # print("Hlen:" + str(hlen))
-
-        # # print(theta)
-
-        # print(img.shape)
+        
         # Calculate the new radii of curvature
         left_curverad = ((1 + (2*left_fit_cr[0]*y_eval*ym_per_pix + left_fit_cr[1])**2)**1.5) / np.absolute(2*left_fit_cr[0])
         right_curverad = ((1 + (2*right_fit_cr[0]*y_eval*ym_per_pix + right_fit_cr[1])**2)**1.5) / np.absolute(2*right_fit_cr[0])
@@ -306,20 +265,20 @@ class LaneDetector():
         # Gazebo image already in RGB
         # img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         img_ = self.filter(img)
-
         # Gazebo return 640 x 640 image size
         img_ = self.perspective_warp(img_)
-        return img_
+        # return img_
 
-        # out_img, curves, lanes, ploty = self.sliding_window(img_, margin=80)
+        out_img, curves, lanes, ploty = self.sliding_window(img_, margin=80)
 
+        curverad, theta = self.get_curve(img, curves[0], curves[1])
         # return out_img
 
-        # curverad, theta = self.get_curve(img, curves[0], curves[1])
-        # lane_curve = np.mean([curverad[0], curverad[1]])
-        # img = self.draw_lanes(img, curves[0], curves[1])
 
-        # return img
+        lane_curve = np.mean([curverad[0], curverad[1]])
+        img = self.draw_lanes(img, curves[0], curves[1])
+
+        return img
 
         # return 'Vehicle offset: {:.4f} cm\n'.format(curverad[2]) + 'Theta: {:.4f} degrees\n'.format(90-math.degrees(theta)) + '----\n'
 
