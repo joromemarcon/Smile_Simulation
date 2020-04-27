@@ -71,65 +71,99 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
-      <sim_time>3392 502000000</sim_time>
-      <real_time>384 632404977</real_time>
-      <wall_time>1587931155 510008519</wall_time>
-      <iterations>254966</iterations>
+      <sim_time>3823 797000000</sim_time>
+      <real_time>781 361291491</real_time>
+      <wall_time>1588004965 833181166</wall_time>
+      <iterations>431295</iterations>
+      <model name='/'>
+        <pose frame=''>-2.047 2.47234 0.132279 0 0 -2.1805</pose>
+        <scale>1 1 1</scale>
+        <link name='base_link'>
+          <pose frame=''>-2.047 2.47234 0.132279 0 0 -2.1805</pose>
+          <velocity>-2e-06 -2e-06 5e-06 -1e-06 -1e-06 0</velocity>
+          <acceleration>-0 -0 -0 0 -0 0</acceleration>
+          <wrench>-0 -0 -0 0 -0 0</wrench>
+        </link>
+        <link name='front_left_wheel_link'>
+          <pose frame=''>-1.95962 2.09904 0.165099 -1e-06 0.153063 -2.1805</pose>
+          <velocity>-2e-06 -2e-06 5e-06 7e-06 -7e-06 0</velocity>
+          <acceleration>-0 -0 0 -0 -0 -0</acceleration>
+          <wrench>-0 -0 0 0 -0 0</wrench>
+        </link>
+        <link name='front_right_wheel_link'>
+          <pose frame=''>-2.42757 2.42589 0.165099 2e-06 0.118456 -2.1805</pose>
+          <velocity>-2e-06 -2e-06 5e-06 8e-06 -8e-06 -0</velocity>
+          <acceleration>-0 -0 0 0 -0 0</acceleration>
+          <wrench>-0 -0 0 0 -0 0</wrench>
+        </link>
+        <link name='rear_left_wheel_link'>
+          <pose frame=''>-1.66644 2.51879 0.165099 0 0.104766 -2.1805</pose>
+          <velocity>-2e-06 -2e-06 5e-06 8e-06 -8e-06 -0</velocity>
+          <acceleration>-0 -0 -0 0 -0 0</acceleration>
+          <wrench>-0 -0 -0 0 -0 0</wrench>
+        </link>
+        <link name='rear_right_wheel_link'>
+          <pose frame=''>-2.13439 2.84564 0.165099 1e-06 0.252932 -2.1805</pose>
+          <velocity>-2e-06 -2e-06 4e-06 6e-06 -7e-06 0</velocity>
+          <acceleration>-0 -0 -0 -0 -0 -0</acceleration>
+          <wrench>-0 -0 -0 0 -0 0</wrench>
+        </link>
+      </model>
       <model name='Stop Sign'>
-        <pose frame=''>7.78796 0.295315 0 0 0 -1.63373</pose>
+        <pose frame=''>-4.27983 5.26385 0 0 -0 3.12862</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>7.78796 0.295315 0 0 0 -1.63373</pose>
+          <pose frame=''>-4.27983 5.26385 0 0 -0 3.12862</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='Stop Sign_0'>
-        <pose frame=''>12.2025 3.90398 0 0 -0 1.58612</pose>
+        <pose frame=''>-5.57571 -0.901496 0 0 0 -1.62958</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>12.2025 3.90398 0 0 -0 1.58612</pose>
+          <pose frame=''>-5.57571 -0.901496 0 0 0 -1.62958</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='Stop Sign_1'>
-        <pose frame=''>8.13145 4.28864 0 0 0 -3.09294</pose>
+        <pose frame=''>-1.40463 -2.14026 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>8.13145 4.28864 0 0 0 -3.09294</pose>
+          <pose frame=''>-1.40463 -2.14026 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='Stop Sign_2'>
-        <pose frame=''>-3.90391 4.33057 0 0 0 -3.13644</pose>
+        <pose frame=''>-0.777093 -20.2208 0 0 -0 1.57306</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-3.90391 4.33057 0 0 0 -3.13644</pose>
+          <pose frame=''>-0.777093 -20.2208 0 0 -0 1.57306</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='Stop Sign_3'>
-        <pose frame=''>0.106198 3.84548 0 0 -0 1.63327</pose>
+        <pose frame=''>-5.04293 -24.815 0 0 0 -1.59226</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>0.106198 3.84548 0 0 -0 1.63327</pose>
+          <pose frame=''>-5.04293 -24.815 0 0 0 -1.59226</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='Stop Sign_4'>
-        <pose frame=''>-0.083568 -0.309688 0 0 0 -0.059287</pose>
+        <pose frame=''>-4.28639 -18.7554 0 0 -0 3.13347</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-0.083568 -0.309688 0 0 0 -0.059287</pose>
+          <pose frame=''>-4.28639 -18.7554 0 0 -0 3.13347</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -145,239 +179,99 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='road_curve'>
-        <pose frame=''>7.75064 17.0186 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>7.75064 17.0186 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='road_curve_0'>
-        <pose frame=''>16.091 -0.883517 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>16.091 -0.883517 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='road_curve_180'>
-        <pose frame=''>0.291942 -17.3408 0 0 -0 3.14</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>0.291942 -17.3408 0 0 -0 3.14</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='road_curve_270'>
-        <pose frame=''>15.3176 -18.0157 0 0 0 -1.57</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>15.3176 -18.0157 0 0 0 -1.57</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='road_curve_90'>
-        <pose frame=''>0.966931 17.7539 0 0 -0 1.57</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>0.966931 17.7539 0 0 -0 1.57</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='road_intersection'>
-        <pose frame=''>9.94628 2.05295 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>9.94628 2.05295 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='road_intersection_0'>
-        <pose frame=''>-2.0121 2.02407 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-2.0121 2.02407 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='road_solid_white_horizontal'>
-        <pose frame=''>9.95001 8.0523 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>9.95001 8.0523 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='road_solid_white_horizontal_0'>
-        <pose frame=''>18.2965 -9.84484 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>18.2965 -9.84484 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='road_solid_white_horizontal_1'>
-        <pose frame=''>-2.02546 9.55398 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-2.02546 9.55398 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='road_solid_white_horizontal_2'>
-        <pose frame=''>-2.02546 8.01032 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-2.02546 8.01032 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='road_solid_white_horizontal_3'>
-        <pose frame=''>-1.96572 -8.41951 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-1.96572 -8.41951 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='road_solid_white_horizontal_4'>
-        <pose frame=''>-1.9697 -3.93735 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-1.9697 -3.93735 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='road_solid_white_vertical'>
-        <pose frame=''>4.01295 2.06528 0 0 -0 1.57</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>4.01295 2.06528 0 0 -0 1.57</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='road_solid_white_vertical_0'>
-        <pose frame=''>6.36257 -20.2172 0 0 -0 1.57</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>6.36257 -20.2172 0 0 -0 1.57</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
       <model name='stop_light_post'>
-        <pose frame=''>20.113 -11.3026 -2.3633 0 -0 0</pose>
+        <pose frame=''>8.10426 17.9995 -2.20286 0 0 -1.58993</pose>
         <scale>1 1 1</scale>
         <link name='center_light::link'>
-          <pose frame=''>18.113 -11.2626 3.4567 0 -0 0</pose>
+          <pose frame=''>8.18251 19.9984 3.61714 0 0 -1.58993</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='link'>
-          <pose frame=''>20.113 -11.3026 -2.3633 0 -0 0</pose>
+          <pose frame=''>8.10426 17.9995 -2.20286 0 0 -1.58993</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='right_light::link'>
-          <pose frame=''>20.113 -11.3526 1.6367 0 -0 0</pose>
+          <pose frame=''>8.05426 18.0005 1.79714 0 0 -1.58993</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='stop_light_post_clone'>
-        <pose frame=''>16.5196 -9.77064 -2.15502 0 -0 3.02227</pose>
+      <model name='stop_light_post_0'>
+        <pose frame=''>9.97222 22.9104 -2.23142 0 -0 1.54883</pose>
         <scale>1 1 1</scale>
         <link name='center_light::link'>
-          <pose frame=''>18.5006 -10.0484 3.66498 0 -0 3.02227</pose>
+          <pose frame=''>9.88829 20.9118 3.58858 0 -0 1.54883</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='link'>
-          <pose frame=''>16.5196 -9.77064 -2.15502 0 -0 3.02227</pose>
+          <pose frame=''>9.97222 22.9104 -2.23142 0 -0 1.54883</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='right_light::link'>
-          <pose frame=''>16.5255 -9.72099 1.84498 0 -0 3.02227</pose>
+          <pose frame=''>10.0222 22.9093 1.76858 0 -0 1.54883</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='stop_light_post_clone_0'>
-        <pose frame=''>4.50391 21.741 -2.15502 0 -0 1.51992</pose>
+      <model name='stop_light_post_1'>
+        <pose frame=''>-20.5817 -12.255 -2.54904 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='center_light::link'>
-          <pose frame=''>4.36222 19.7456 3.66498 0 -0 1.51992</pose>
+          <pose frame=''>-22.5817 -12.215 3.27096 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='link'>
-          <pose frame=''>4.50391 21.741 -2.15502 0 -0 1.51992</pose>
+          <pose frame=''>-20.5817 -12.255 -2.54904 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='right_light::link'>
-          <pose frame=''>4.55383 21.7384 1.84498 0 -0 1.51992</pose>
+          <pose frame=''>-20.5817 -12.305 1.45096 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='stop_light_post_clone_0_clone'>
-        <pose frame=''>4.12228 18.4458 -2.15502 0 0 -1.49644</pose>
+      <model name='stop_light_post_2'>
+        <pose frame=''>-23.358 -10.8982 -2.6187 0 -0 3.03283</pose>
         <scale>1 1 1</scale>
         <link name='center_light::link'>
-          <pose frame=''>4.0136 20.4432 3.66498 0 0 -1.49644</pose>
+          <pose frame=''>-21.3742 -11.1551 3.2013 0 -0 3.03283</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='link'>
-          <pose frame=''>4.12228 18.4458 -2.15502 0 0 -1.49644</pose>
+          <pose frame=''>-23.358 -10.8982 -2.6187 0 -0 3.03283</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='right_light::link'>
-          <pose frame=''>4.07242 18.4421 1.84498 0 0 -1.49644</pose>
+          <pose frame=''>-23.3526 -10.8485 1.3813 0 -0 3.03283</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='track'>
+        <pose frame=''>1 -1 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>1 -1 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -389,535 +283,74 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>-33.5011 4.09002 33.5458 0 0.787738 -0.09153</pose>
+        <pose frame=''>33.2773 -44.3146 17.6711 0 0.358796 2.21282</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
-    <model name='road_solid_white_vertical'>
-      <pose frame=''>4.01295 2.06528 0 0 -0 1.57</pose>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
+    <model name='/'>
+      <link name='base_link'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0.00723 -0.083016 0.06774 0 -0 0</pose>
+          <mass>47.134</mass>
+          <inertia>
+            <ixx>0.678021</ixx>
+            <ixy>-0.0544735</ixy>
+            <ixz>-0.208918</ixz>
+            <iyy>1.9292</iyy>
+            <iyz>-0.0240036</iyz>
+            <izz>2.16181</izz>
+          </inertia>
+        </inertial>
+        <collision name='base_link_collision'>
+          <pose frame=''>0 0 0.061875 0 -0 0</pose>
           <geometry>
-            <plane>
-              <size>4 8</size>
-              <normal>0 0 1</normal>
-            </plane>
+            <box>
+              <size>0.9874 0.5709 0.12375</size>
+            </box>
           </geometry>
+          <max_contacts>10</max_contacts>
           <surface>
-            <friction>
-              <ode>
-                <mu>100</mu>
-                <mu2>50</mu2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
             <contact>
               <ode/>
             </contact>
             <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <plane>
-              <size>4 8</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/smile.material</uri>
-              <name>Smile/Solid_Lane</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-    </model>
-    <model name='road_intersection'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <plane>
-              <size>4 4</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <surface>
             <friction>
-              <ode>
-                <mu>100</mu>
-                <mu2>50</mu2>
-              </ode>
               <torsional>
                 <ode/>
               </torsional>
+              <ode/>
             </friction>
+          </surface>
+        </collision>
+        <collision name='base_link_collision_1'>
+          <pose frame=''>0 0 0.175625 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.78992 0.5709 0.10375</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
             <contact>
               <ode/>
             </contact>
             <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <plane>
-              <size>4 4</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/smile.material</uri>
-              <name>Smile/Intersection</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>9.94628 2.05295 0 0 -0 0</pose>
-    </model>
-    <model name='road_solid_white_horizontal'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <plane>
-              <size>4 8</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <surface>
             <friction>
-              <ode>
-                <mu>100</mu>
-                <mu2>50</mu2>
-              </ode>
               <torsional>
                 <ode/>
               </torsional>
-            </friction>
-            <contact>
               <ode/>
-            </contact>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <plane>
-              <size>4 8</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/smile.material</uri>
-              <name>Smile/Solid_Lane</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>9.95001 8.0523 0 0 -0 0</pose>
-    </model>
-    <model name='road_curve'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <plane>
-              <size>8 8</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100</mu>
-                <mu2>50</mu2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
             </friction>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
           </surface>
-          <max_contacts>10</max_contacts>
         </collision>
-        <visual name='visual'>
-          <geometry>
-            <plane>
-              <size>8.45 10</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/smile.material</uri>
-              <name>Smile/Curve_Lane</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>7.75064 17.0186 0 0 -0 0</pose>
-    </model>
-    <model name='road_curve_0'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <plane>
-              <size>8 8</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100</mu>
-                <mu2>50</mu2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <plane>
-              <size>8.45 10</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/smile.material</uri>
-              <name>Smile/Curve_Lane</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>16.091 -0.883517 0 0 -0 0</pose>
-    </model>
-    <model name='road_solid_white_horizontal_0'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <plane>
-              <size>4 8</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100</mu>
-                <mu2>50</mu2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <plane>
-              <size>4 8</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/smile.material</uri>
-              <name>Smile/Solid_Lane</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>18.2965 -9.84484 0 0 -0 0</pose>
-    </model>
-    <model name='road_intersection_0'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <plane>
-              <size>4 4</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100</mu>
-                <mu2>50</mu2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <plane>
-              <size>4 4</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/smile.material</uri>
-              <name>Smile/Intersection</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>-2.0121 2.02407 0 0 -0 0</pose>
-    </model>
-    <model name='road_solid_white_vertical_0'>
-      <pose frame=''>6.36257 -20.2172 0 0 -0 1.57</pose>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <plane>
-              <size>4 8</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100</mu>
-                <mu2>50</mu2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <plane>
-              <size>4 8</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/smile.material</uri>
-              <name>Smile/Solid_Lane</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-    </model>
-    <model name='road_curve_90'>
-      <static>1</static>
-      <pose frame=''>0.966931 17.7539 0 0 -0 1.57</pose>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <plane>
-              <size>8 8</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100</mu>
-                <mu2>50</mu2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <plane>
-              <size>8.45 10</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/smile.material</uri>
-              <name>Smile/Curve_Lane</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-    </model>
-    <model name='road_curve_270'>
-      <static>1</static>
-      <pose frame=''>15.3176 -18.0157 0 0 0 -1.57</pose>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <plane>
-              <size>8 8</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100</mu>
-                <mu2>50</mu2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <plane>
-              <size>8.45 10</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/smile.material</uri>
-              <name>Smile/Curve_Lane</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-    </model>
-    <model name='road_curve_180'>
-      <static>1</static>
-      <pose frame=''>0.291942 -17.3408 0 0 -0 3.14</pose>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <plane>
-              <size>8 8</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100</mu>
-                <mu2>50</mu2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <plane>
-              <size>8.45 10</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/smile.material</uri>
-              <name>Smile/Curve_Lane</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-    </model>
-    <model name='Stop Sign'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
+        <collision name='base_link_fixed_joint_lump__top_plate_link_collision_2'>
+          <pose frame=''>0.0812 0 0.245 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>model://stop_sign/meshes/stop_sign.dae</uri>
+              <scale>1 1 1</scale>
+              <uri>/opt/ros/melodic/share/husky_description/meshes/top_plate.stl</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -934,34 +367,12 @@
             </friction>
           </surface>
         </collision>
-        <visual name='visual'>
+        <collision name='base_link_fixed_joint_lump__base_laser_mount_collision_3'>
+          <pose frame=''>0.3018 0 0.30985 0 -0 0</pose>
           <geometry>
-            <mesh>
-              <uri>model://stop_sign/meshes/stop_sign.dae</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://stop_sign/materials/scripts</uri>
-              <uri>model://stop_sign/materials/textures</uri>
-              <name>StopSign/Diffuse</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>7.78796 0.295315 0 0 -0 0</pose>
-    </model>
-    <model name='Stop Sign_0'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://stop_sign/meshes/stop_sign.dae</uri>
-            </mesh>
+            <box>
+              <size>0.1 0.108 0.117</size>
+            </box>
           </geometry>
           <max_contacts>10</max_contacts>
           <surface>
@@ -977,60 +388,537 @@
             </friction>
           </surface>
         </collision>
-        <visual name='visual'>
+        <collision name='base_link_fixed_joint_lump__base_laser_collision_4'>
+          <pose frame=''>0.337 0 0.35795 3.14159 -0 0</pose>
           <geometry>
-            <mesh>
-              <uri>model://stop_sign/meshes/stop_sign.dae</uri>
-            </mesh>
+            <box>
+              <size>0.105 0.1 0.1</size>
+            </box>
           </geometry>
-          <material>
-            <script>
-              <uri>model://stop_sign/materials/scripts</uri>
-              <uri>model://stop_sign/materials/textures</uri>
-              <name>StopSign/Diffuse</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>12.2025 3.90398 0 0 -0 0</pose>
-    </model>
-    <model name='Stop Sign_1'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://stop_sign/meshes/stop_sign.dae</uri>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
           <surface>
             <contact>
               <ode/>
             </contact>
-            <bounce/>
             <friction>
+              <ode/>
               <torsional>
                 <ode/>
               </torsional>
-              <ode/>
             </friction>
+            <bounce/>
           </surface>
+          <max_contacts>10</max_contacts>
         </collision>
-        <visual name='visual'>
+        <visual name='base_link_visual'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>model://stop_sign/meshes/stop_sign.dae</uri>
+              <scale>1 1 1</scale>
+              <uri>/opt/ros/melodic/share/husky_description/meshes/base_link.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <visual name='base_link_fixed_joint_lump__front_bumper_link_visual_1'>
+          <pose frame=''>0.48 0 0.091 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/opt/ros/melodic/share/husky_description/meshes/bumper.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <visual name='base_link_fixed_joint_lump__rear_bumper_link_visual_2'>
+          <pose frame=''>-0.48 0 0.091 0 -0 3.14159</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/opt/ros/melodic/share/husky_description/meshes/bumper.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <visual name='base_link_fixed_joint_lump__top_chassis_link_visual_3'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/opt/ros/melodic/share/husky_description/meshes/top_chassis.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <visual name='base_link_fixed_joint_lump__top_plate_link_visual_4'>
+          <pose frame=''>0.0812 0 0.245 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/opt/ros/melodic/share/husky_description/meshes/top_plate.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <visual name='base_link_fixed_joint_lump__base_laser_mount_visual_5'>
+          <pose frame=''>0.3018 0 0.25135 0 0 -1.57079</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/opt/ros/melodic/share/husky_description/meshes/accessories/lms1xx_mount.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <visual name='base_link_fixed_joint_lump__base_laser_visual_6'>
+          <pose frame=''>0.337 0 0.30795 3.14159 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/opt/ros/melodic/share/lms1xx/meshes/sick-lms1xx.dae</uri>
             </mesh>
           </geometry>
           <material>
             <script>
-              <uri>model://stop_sign/materials/scripts</uri>
-              <uri>model://stop_sign/materials/textures</uri>
-              <name>StopSign/Diffuse</name>
+              <uri>__default__</uri>
+              <name>__default__</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_link_fixed_joint_lump__user_rail_link_visual_7'>
+          <pose frame=''>0.272 0 0.245 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/opt/ros/melodic/share/husky_description/meshes/user_rail.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay/>
+        <gravity>0</gravity>
+        <velocity_decay/>
+        <sensor name='base_laser' type='ray'>
+          <visualize>0</visualize>
+          <update_rate>50</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>720</samples>
+                <resolution>1</resolution>
+                <min_angle>-2.35619</min_angle>
+                <max_angle>2.35619</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>1</samples>
+                <min_angle>0</min_angle>
+                <max_angle>0</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.1</min>
+              <max>30</max>
+              <resolution>0.01</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.001</stddev>
+            </noise>
+          </ray>
+          <plugin name='gazebo_ros_laser' filename='libgazebo_ros_laser.so'>
+            <topicName>scan</topicName>
+            <frameName>base_laser</frameName>
+            <robotNamespace>/</robotNamespace>
+          </plugin>
+          <pose frame=''>0.337 0 0.30795 3.14159 -0 0</pose>
+        </sensor>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='front_left_wheel_link'>
+        <pose frame=''>0.256 0.2854 0.03282 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <mass>2.637</mass>
+          <inertia>
+            <ixx>0.02467</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.04411</iyy>
+            <iyz>0</iyz>
+            <izz>0.02467</izz>
+          </inertia>
+        </inertial>
+        <collision name='front_left_wheel_link_collision'>
+          <pose frame=''>0 0 0 1.57079 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.1143</length>
+              <radius>0.1651</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1e+07</kp>
+                <kd>1</kd>
+              </ode>
+            </contact>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+                <fdir1>1 0 0</fdir1>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='front_left_wheel_link_visual'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/opt/ros/melodic/share/husky_description/meshes/wheel.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>__default__</uri>
+              <name>__default__</name>
+            </script>
+          </material>
+        </visual>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='front_left_wheel' type='revolute'>
+        <child>front_left_wheel_link</child>
+        <parent>base_link</parent>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <link name='front_right_wheel_link'>
+        <pose frame=''>0.256 -0.2854 0.03282 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <mass>2.637</mass>
+          <inertia>
+            <ixx>0.02467</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.04411</iyy>
+            <iyz>0</iyz>
+            <izz>0.02467</izz>
+          </inertia>
+        </inertial>
+        <collision name='front_right_wheel_link_collision'>
+          <pose frame=''>0 0 0 1.57079 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.1143</length>
+              <radius>0.1651</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1e+07</kp>
+                <kd>1</kd>
+              </ode>
+            </contact>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+                <fdir1>1 0 0</fdir1>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='front_right_wheel_link_visual'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/opt/ros/melodic/share/husky_description/meshes/wheel.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>__default__</uri>
+              <name>__default__</name>
+            </script>
+          </material>
+        </visual>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='front_right_wheel' type='revolute'>
+        <child>front_right_wheel_link</child>
+        <parent>base_link</parent>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <link name='rear_left_wheel_link'>
+        <pose frame=''>-0.256 0.2854 0.03282 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <mass>2.637</mass>
+          <inertia>
+            <ixx>0.02467</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.04411</iyy>
+            <iyz>0</iyz>
+            <izz>0.02467</izz>
+          </inertia>
+        </inertial>
+        <collision name='rear_left_wheel_link_collision'>
+          <pose frame=''>0 0 0 1.57079 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.1143</length>
+              <radius>0.1651</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1e+07</kp>
+                <kd>1</kd>
+              </ode>
+            </contact>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+                <fdir1>1 0 0</fdir1>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='rear_left_wheel_link_visual'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/opt/ros/melodic/share/husky_description/meshes/wheel.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>__default__</uri>
+              <name>__default__</name>
+            </script>
+          </material>
+        </visual>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='rear_left_wheel' type='revolute'>
+        <child>rear_left_wheel_link</child>
+        <parent>base_link</parent>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <link name='rear_right_wheel_link'>
+        <pose frame=''>-0.256 -0.2854 0.03282 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <mass>2.637</mass>
+          <inertia>
+            <ixx>0.02467</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.04411</iyy>
+            <iyz>0</iyz>
+            <izz>0.02467</izz>
+          </inertia>
+        </inertial>
+        <collision name='rear_right_wheel_link_collision'>
+          <pose frame=''>0 0 0 1.57079 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.1143</length>
+              <radius>0.1651</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1e+07</kp>
+                <kd>1</kd>
+              </ode>
+            </contact>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+                <fdir1>1 0 0</fdir1>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='rear_right_wheel_link_visual'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/opt/ros/melodic/share/husky_description/meshes/wheel.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>__default__</uri>
+              <name>__default__</name>
+            </script>
+          </material>
+        </visual>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='rear_right_wheel' type='revolute'>
+        <child>rear_right_wheel_link</child>
+        <parent>base_link</parent>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <plugin name='gazebo_ros_control' filename='libgazebo_ros_control.so'>
+        <robotNamespace>/</robotNamespace>
+      </plugin>
+      <plugin name='imu_controller' filename='libhector_gazebo_ros_imu.so'>
+        <robotNamespace>/</robotNamespace>
+        <updateRate>50.0</updateRate>
+        <bodyName>base_link</bodyName>
+        <topicName>imu/data</topicName>
+        <accelDrift>0.005 0.005 0.005</accelDrift>
+        <accelGaussianNoise>0.005 0.005 0.005</accelGaussianNoise>
+        <rateDrift>0.005 0.005 0.005</rateDrift>
+        <rateGaussianNoise>0.005 0.005 0.005</rateGaussianNoise>
+        <headingDrift>0.005</headingDrift>
+        <headingGaussianNoise>0.005</headingGaussianNoise>
+      </plugin>
+      <static>0</static>
+      <plugin name='gps_controller' filename='libhector_gazebo_ros_gps.so'>
+        <robotNamespace>/</robotNamespace>
+        <updateRate>40</updateRate>
+        <bodyName>base_link</bodyName>
+        <frameId>base_link</frameId>
+        <topicName>navsat/fix</topicName>
+        <velocityTopicName>navsat/vel</velocityTopicName>
+        <referenceLatitude>49.9</referenceLatitude>
+        <referenceLongitude>8.9</referenceLongitude>
+        <referenceHeading>0</referenceHeading>
+        <referenceAltitude>0</referenceAltitude>
+        <drift>0.0001 0.0001 0.0001</drift>
+      </plugin>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+    </model>
+    <model name='track'>
+      <pose frame=''>1 -1 0 0 -0 0</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <size>50 50</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <size>50 50</size>
+              <normal>0 0 1</normal>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/smile.material</uri>
+              <name>Smile/Track</name>
             </script>
           </material>
         </visual>
@@ -1038,7 +926,6 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <pose frame=''>8.13145 4.28864 0 0 -0 0</pose>
     </model>
     <model name='stop_light_post'>
       <static>1</static>
@@ -1250,9 +1137,9 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <pose frame=''>20.113 -11.3026 0 0 -0 0</pose>
+      <pose frame=''>8 18 0 0 -0 0</pose>
     </model>
-    <model name='stop_light_post_clone'>
+    <model name='stop_light_post_0'>
       <static>1</static>
       <link name='link'>
         <collision name='post'>
@@ -1462,7 +1349,560 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <pose frame=''>16.5196 -9.77064 -2.15502 0 -0 0</pose>
+      <pose frame=''>9.97222 22.9104 0 0 -0 0</pose>
+    </model>
+    <model name='Stop Sign'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://stop_sign/meshes/stop_sign.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://stop_sign/meshes/stop_sign.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://stop_sign/materials/scripts</uri>
+              <uri>model://stop_sign/materials/textures</uri>
+              <name>StopSign/Diffuse</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>-4.27983 5.26385 0 0 -0 0</pose>
+    </model>
+    <model name='Stop Sign_0'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://stop_sign/meshes/stop_sign.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://stop_sign/meshes/stop_sign.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://stop_sign/materials/scripts</uri>
+              <uri>model://stop_sign/materials/textures</uri>
+              <name>StopSign/Diffuse</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>-5.57571 -0.901496 0 0 -0 0</pose>
+    </model>
+    <model name='Stop Sign_1'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://stop_sign/meshes/stop_sign.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://stop_sign/meshes/stop_sign.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://stop_sign/materials/scripts</uri>
+              <uri>model://stop_sign/materials/textures</uri>
+              <name>StopSign/Diffuse</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>-1.40463 -2.14026 0 0 -0 0</pose>
+    </model>
+    <model name='stop_light_post_1'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='post'>
+          <geometry>
+            <mesh>
+              <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
+              <scale>0.01 0.01 0.01</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='post'>
+          <geometry>
+            <mesh>
+              <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
+              <scale>0.01 0.01 0.01</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <link name='right_light::link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://stop_light/meshes/stop_light.obj</uri>
+              <scale>0.01 0.01 0.01</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='frame'>
+          <geometry>
+            <mesh>
+              <uri>model://stop_light/meshes/stop_light.obj</uri>
+              <scale>0.01 0.01 0.01</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <visual name='red'>
+          <pose frame=''>-0.001123 -0.082251 -0.147514 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.1012</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://stop_light/materials/scripts/</uri>
+              <uri>model://stop_light/materials/textures/</uri>
+              <name>StopLight/Light</name>
+            </script>
+            <ambient>1 0 0 1</ambient>
+            <specular>1 0 0 1</specular>
+          </material>
+        </visual>
+        <visual name='yellow'>
+          <pose frame=''>-0.001123 -0.082251 -0.402 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.1012</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://stop_light/materials/scripts/</uri>
+              <uri>model://stop_light/materials/textures/</uri>
+              <name>StopLight/Light</name>
+            </script>
+            <ambient>1 1 0 1</ambient>
+            <specular>1 1 0 1</specular>
+          </material>
+        </visual>
+        <visual name='green'>
+          <pose frame=''>-0.001123 -0.082251 -0.655 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.1012</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://stop_light/materials/scripts/</uri>
+              <uri>model://stop_light/materials/textures/</uri>
+              <name>StopLight/Light</name>
+            </script>
+            <ambient>0 1 0 1</ambient>
+            <specular>0 1 0 1</specular>
+          </material>
+        </visual>
+        <pose frame=''>0 -0.05 4 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <link name='center_light::link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://stop_light/meshes/stop_light.obj</uri>
+              <scale>0.01 0.01 0.01</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='frame'>
+          <geometry>
+            <mesh>
+              <uri>model://stop_light/meshes/stop_light.obj</uri>
+              <scale>0.01 0.01 0.01</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <visual name='red'>
+          <pose frame=''>-0.001123 -0.082251 -0.147514 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.1012</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://stop_light/materials/scripts/</uri>
+              <uri>model://stop_light/materials/textures/</uri>
+              <name>StopLight/Light</name>
+            </script>
+            <ambient>1 0 0 1</ambient>
+            <specular>1 0 0 1</specular>
+          </material>
+        </visual>
+        <visual name='yellow'>
+          <pose frame=''>-0.001123 -0.082251 -0.402 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.1012</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://stop_light/materials/scripts/</uri>
+              <uri>model://stop_light/materials/textures/</uri>
+              <name>StopLight/Light</name>
+            </script>
+            <ambient>1 1 0 1</ambient>
+            <specular>1 1 0 1</specular>
+          </material>
+        </visual>
+        <visual name='green'>
+          <pose frame=''>-0.001123 -0.082251 -0.655 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.1012</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://stop_light/materials/scripts/</uri>
+              <uri>model://stop_light/materials/textures/</uri>
+              <name>StopLight/Light</name>
+            </script>
+            <ambient>0 1 0 1</ambient>
+            <specular>0 1 0 1</specular>
+          </material>
+        </visual>
+        <pose frame=''>-2 0.04 5.82 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>-20.4713 -12.255 0 0 -0 0</pose>
+    </model>
+    <model name='stop_light_post_2'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='post'>
+          <geometry>
+            <mesh>
+              <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
+              <scale>0.01 0.01 0.01</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='post'>
+          <geometry>
+            <mesh>
+              <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
+              <scale>0.01 0.01 0.01</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <link name='right_light::link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://stop_light/meshes/stop_light.obj</uri>
+              <scale>0.01 0.01 0.01</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='frame'>
+          <geometry>
+            <mesh>
+              <uri>model://stop_light/meshes/stop_light.obj</uri>
+              <scale>0.01 0.01 0.01</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <visual name='red'>
+          <pose frame=''>-0.001123 -0.082251 -0.147514 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.1012</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://stop_light/materials/scripts/</uri>
+              <uri>model://stop_light/materials/textures/</uri>
+              <name>StopLight/Light</name>
+            </script>
+            <ambient>1 0 0 1</ambient>
+            <specular>1 0 0 1</specular>
+          </material>
+        </visual>
+        <visual name='yellow'>
+          <pose frame=''>-0.001123 -0.082251 -0.402 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.1012</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://stop_light/materials/scripts/</uri>
+              <uri>model://stop_light/materials/textures/</uri>
+              <name>StopLight/Light</name>
+            </script>
+            <ambient>1 1 0 1</ambient>
+            <specular>1 1 0 1</specular>
+          </material>
+        </visual>
+        <visual name='green'>
+          <pose frame=''>-0.001123 -0.082251 -0.655 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.1012</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://stop_light/materials/scripts/</uri>
+              <uri>model://stop_light/materials/textures/</uri>
+              <name>StopLight/Light</name>
+            </script>
+            <ambient>0 1 0 1</ambient>
+            <specular>0 1 0 1</specular>
+          </material>
+        </visual>
+        <pose frame=''>0 -0.05 4 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <link name='center_light::link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://stop_light/meshes/stop_light.obj</uri>
+              <scale>0.01 0.01 0.01</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='frame'>
+          <geometry>
+            <mesh>
+              <uri>model://stop_light/meshes/stop_light.obj</uri>
+              <scale>0.01 0.01 0.01</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <visual name='red'>
+          <pose frame=''>-0.001123 -0.082251 -0.147514 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.1012</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://stop_light/materials/scripts/</uri>
+              <uri>model://stop_light/materials/textures/</uri>
+              <name>StopLight/Light</name>
+            </script>
+            <ambient>1 0 0 1</ambient>
+            <specular>1 0 0 1</specular>
+          </material>
+        </visual>
+        <visual name='yellow'>
+          <pose frame=''>-0.001123 -0.082251 -0.402 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.1012</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://stop_light/materials/scripts/</uri>
+              <uri>model://stop_light/materials/textures/</uri>
+              <name>StopLight/Light</name>
+            </script>
+            <ambient>1 1 0 1</ambient>
+            <specular>1 1 0 1</specular>
+          </material>
+        </visual>
+        <visual name='green'>
+          <pose frame=''>-0.001123 -0.082251 -0.655 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.1012</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://stop_light/materials/scripts/</uri>
+              <uri>model://stop_light/materials/textures/</uri>
+              <name>StopLight/Light</name>
+            </script>
+            <ambient>0 1 0 1</ambient>
+            <specular>0 1 0 1</specular>
+          </material>
+        </visual>
+        <pose frame=''>-2 0.04 5.82 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>-23.358 -10.8982 0 0 -0 0</pose>
     </model>
     <model name='Stop Sign_2'>
       <static>1</static>
@@ -1505,7 +1945,7 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <pose frame=''>-3.90391 4.33057 0 0 -0 0</pose>
+      <pose frame=''>-0.777093 -20.2208 0 0 -0 0</pose>
     </model>
     <model name='Stop Sign_3'>
       <static>1</static>
@@ -1548,7 +1988,7 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <pose frame=''>0.106198 3.84548 0 0 -0 0</pose>
+      <pose frame=''>-5.04293 -24.815 0 0 -0 0</pose>
     </model>
     <model name='Stop Sign_4'>
       <static>1</static>
@@ -1591,619 +2031,7 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <pose frame=''>-0.083568 -0.309688 0 0 -0 0</pose>
-    </model>
-    <model name='stop_light_post_clone_0'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='post'>
-          <geometry>
-            <mesh>
-              <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
-              <scale>0.01 0.01 0.01</scale>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='post'>
-          <geometry>
-            <mesh>
-              <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
-              <scale>0.01 0.01 0.01</scale>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <static>1</static>
-      <link name='right_light::link'>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://stop_light/meshes/stop_light.obj</uri>
-              <scale>0.01 0.01 0.01</scale>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='frame'>
-          <geometry>
-            <mesh>
-              <uri>model://stop_light/meshes/stop_light.obj</uri>
-              <scale>0.01 0.01 0.01</scale>
-            </mesh>
-          </geometry>
-        </visual>
-        <visual name='red'>
-          <pose frame=''>-0.001123 -0.082251 -0.147514 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>0.1012</radius>
-            </sphere>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://stop_light/materials/scripts/</uri>
-              <uri>model://stop_light/materials/textures/</uri>
-              <name>StopLight/Light</name>
-            </script>
-            <ambient>1 0 0 1</ambient>
-            <specular>1 0 0 1</specular>
-          </material>
-        </visual>
-        <visual name='yellow'>
-          <pose frame=''>-0.001123 -0.082251 -0.402 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>0.1012</radius>
-            </sphere>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://stop_light/materials/scripts/</uri>
-              <uri>model://stop_light/materials/textures/</uri>
-              <name>StopLight/Light</name>
-            </script>
-            <ambient>1 1 0 1</ambient>
-            <specular>1 1 0 1</specular>
-          </material>
-        </visual>
-        <visual name='green'>
-          <pose frame=''>-0.001123 -0.082251 -0.655 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>0.1012</radius>
-            </sphere>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://stop_light/materials/scripts/</uri>
-              <uri>model://stop_light/materials/textures/</uri>
-              <name>StopLight/Light</name>
-            </script>
-            <ambient>0 1 0 1</ambient>
-            <specular>0 1 0 1</specular>
-          </material>
-        </visual>
-        <pose frame=''>0 -0.05 4 0 -0 0</pose>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <static>1</static>
-      <link name='center_light::link'>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://stop_light/meshes/stop_light.obj</uri>
-              <scale>0.01 0.01 0.01</scale>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='frame'>
-          <geometry>
-            <mesh>
-              <uri>model://stop_light/meshes/stop_light.obj</uri>
-              <scale>0.01 0.01 0.01</scale>
-            </mesh>
-          </geometry>
-        </visual>
-        <visual name='red'>
-          <pose frame=''>-0.001123 -0.082251 -0.147514 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>0.1012</radius>
-            </sphere>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://stop_light/materials/scripts/</uri>
-              <uri>model://stop_light/materials/textures/</uri>
-              <name>StopLight/Light</name>
-            </script>
-            <ambient>1 0 0 1</ambient>
-            <specular>1 0 0 1</specular>
-          </material>
-        </visual>
-        <visual name='yellow'>
-          <pose frame=''>-0.001123 -0.082251 -0.402 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>0.1012</radius>
-            </sphere>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://stop_light/materials/scripts/</uri>
-              <uri>model://stop_light/materials/textures/</uri>
-              <name>StopLight/Light</name>
-            </script>
-            <ambient>1 1 0 1</ambient>
-            <specular>1 1 0 1</specular>
-          </material>
-        </visual>
-        <visual name='green'>
-          <pose frame=''>-0.001123 -0.082251 -0.655 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>0.1012</radius>
-            </sphere>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://stop_light/materials/scripts/</uri>
-              <uri>model://stop_light/materials/textures/</uri>
-              <name>StopLight/Light</name>
-            </script>
-            <ambient>0 1 0 1</ambient>
-            <specular>0 1 0 1</specular>
-          </material>
-        </visual>
-        <pose frame=''>-2 0.04 5.82 0 -0 0</pose>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>20.121 -3.32561 -2.15502 0 -0 0</pose>
-    </model>
-    <model name='stop_light_post_clone_0_clone'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='post'>
-          <geometry>
-            <mesh>
-              <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
-              <scale>0.01 0.01 0.01</scale>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='post'>
-          <geometry>
-            <mesh>
-              <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
-              <scale>0.01 0.01 0.01</scale>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <static>1</static>
-      <link name='right_light::link'>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://stop_light/meshes/stop_light.obj</uri>
-              <scale>0.01 0.01 0.01</scale>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='frame'>
-          <geometry>
-            <mesh>
-              <uri>model://stop_light/meshes/stop_light.obj</uri>
-              <scale>0.01 0.01 0.01</scale>
-            </mesh>
-          </geometry>
-        </visual>
-        <visual name='red'>
-          <pose frame=''>-0.001123 -0.082251 -0.147514 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>0.1012</radius>
-            </sphere>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://stop_light/materials/scripts/</uri>
-              <uri>model://stop_light/materials/textures/</uri>
-              <name>StopLight/Light</name>
-            </script>
-            <ambient>1 0 0 1</ambient>
-            <specular>1 0 0 1</specular>
-          </material>
-        </visual>
-        <visual name='yellow'>
-          <pose frame=''>-0.001123 -0.082251 -0.402 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>0.1012</radius>
-            </sphere>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://stop_light/materials/scripts/</uri>
-              <uri>model://stop_light/materials/textures/</uri>
-              <name>StopLight/Light</name>
-            </script>
-            <ambient>1 1 0 1</ambient>
-            <specular>1 1 0 1</specular>
-          </material>
-        </visual>
-        <visual name='green'>
-          <pose frame=''>-0.001123 -0.082251 -0.655 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>0.1012</radius>
-            </sphere>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://stop_light/materials/scripts/</uri>
-              <uri>model://stop_light/materials/textures/</uri>
-              <name>StopLight/Light</name>
-            </script>
-            <ambient>0 1 0 1</ambient>
-            <specular>0 1 0 1</specular>
-          </material>
-        </visual>
-        <pose frame=''>0 -0.05 4 0 -0 0</pose>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <static>1</static>
-      <link name='center_light::link'>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://stop_light/meshes/stop_light.obj</uri>
-              <scale>0.01 0.01 0.01</scale>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='frame'>
-          <geometry>
-            <mesh>
-              <uri>model://stop_light/meshes/stop_light.obj</uri>
-              <scale>0.01 0.01 0.01</scale>
-            </mesh>
-          </geometry>
-        </visual>
-        <visual name='red'>
-          <pose frame=''>-0.001123 -0.082251 -0.147514 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>0.1012</radius>
-            </sphere>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://stop_light/materials/scripts/</uri>
-              <uri>model://stop_light/materials/textures/</uri>
-              <name>StopLight/Light</name>
-            </script>
-            <ambient>1 0 0 1</ambient>
-            <specular>1 0 0 1</specular>
-          </material>
-        </visual>
-        <visual name='yellow'>
-          <pose frame=''>-0.001123 -0.082251 -0.402 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>0.1012</radius>
-            </sphere>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://stop_light/materials/scripts/</uri>
-              <uri>model://stop_light/materials/textures/</uri>
-              <name>StopLight/Light</name>
-            </script>
-            <ambient>1 1 0 1</ambient>
-            <specular>1 1 0 1</specular>
-          </material>
-        </visual>
-        <visual name='green'>
-          <pose frame=''>-0.001123 -0.082251 -0.655 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>0.1012</radius>
-            </sphere>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://stop_light/materials/scripts/</uri>
-              <uri>model://stop_light/materials/textures/</uri>
-              <name>StopLight/Light</name>
-            </script>
-            <ambient>0 1 0 1</ambient>
-            <specular>0 1 0 1</specular>
-          </material>
-        </visual>
-        <pose frame=''>-2 0.04 5.82 0 -0 0</pose>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>2.38603 18.1216 -2.15502 0 -0 1.60184</pose>
-    </model>
-    <model name='road_solid_white_horizontal_1'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <plane>
-              <size>4 8</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100</mu>
-                <mu2>50</mu2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <plane>
-              <size>4 8</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/smile.material</uri>
-              <name>Smile/Solid_Lane</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>-2.00303 9.57386 0 0 -0 0</pose>
-    </model>
-    <model name='road_solid_white_horizontal_2'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <plane>
-              <size>4 8</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100</mu>
-                <mu2>50</mu2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <plane>
-              <size>4 8</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/smile.material</uri>
-              <name>Smile/Solid_Lane</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>-1.98818 7.93588 0 0 -0 0</pose>
-    </model>
-    <model name='road_solid_white_horizontal_3'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <plane>
-              <size>4 8</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100</mu>
-                <mu2>50</mu2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <plane>
-              <size>4 8</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/smile.material</uri>
-              <name>Smile/Solid_Lane</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>-1.91021 -3.97495 0 0 -0 0</pose>
-    </model>
-    <model name='road_solid_white_horizontal_4'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <plane>
-              <size>4 8</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100</mu>
-                <mu2>50</mu2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <plane>
-              <size>4 8</size>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/smile.material</uri>
-              <name>Smile/Solid_Lane</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>-1.86771 -8.36705 0 0 -0 0</pose>
+      <pose frame=''>-4.28639 -18.7554 0 0 -0 0</pose>
     </model>
   </world>
 </sdf>
