@@ -13,12 +13,37 @@ class Simulator:
         self.lanelength = len(self.lane0)
 
 
-    def listen(self, cmdmsg, cmdpub):
+    '''
+        Note: 1. pass in a tuple, because list is unhashable.
+              2. current_position needs to be a tuple consisting of two points.
+              3. current_position needs to exist in the dictionary of tuples
+              
+        _checkpoints will be modified with points from gazebo
+    '''
+    def waypoint(self, current_position):
+        _checkpoints = {
+            (0, 0): [(0, 1), (4, 8), (5, 9)],
+            (0, 1): [(3, 7), (2, 6)],
+            (4, 8): [(3, 7)],
+            (5, 9): [(2, 6)],
+            (3, 7): [(0, 0), (2, 6), (5, 9)],
+            (2, 6): [(4, 8)],
+        }
+
+        point = _checkpoints[current_position]
+        index = random.randint(1, len(point))  # it will randomly choose whether to go straight, turn left, or right
+        goal_position = point[index - 1]
+
+        self.goal[0] = goal_position[0]
+        self.goal[1] = goal_position[1]
+
+
+def listen(self, cmdmsg, cmdpub):
         rospy.Subscriber('odometry/filtered',nav_msgs.msg.Odometry,self.huskyOdomCallback, 
                  (cmdpub,cmdmsg))
 
         rospy.spin()
-
+    
     def goal_switch(self, select):
         switch={0: [12,14], 
                 1: [10,-2],
