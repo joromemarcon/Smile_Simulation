@@ -1,5 +1,6 @@
 '''
     Simplified: Waypoint traversal
+    
 '''
 import math
 import random

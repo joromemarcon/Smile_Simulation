@@ -12,7 +12,6 @@ class Simulator:
         self.lane0, self.lane1 = self.lanes(0.5, 2, 0, 10)
         self.lanelength = len(self.lane0)
 
-
     '''
         Note: 1. pass in a tuple, because list is unhashable.
               2. current_position needs to be a tuple consisting of two points.
